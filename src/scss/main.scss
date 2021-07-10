@@ -1,0 +1,122 @@
+@font-face {
+    font-family : 'Gilroy';
+    src         : url('../fonts/gilroy-regular.woff') format('woff'), url('../fonts/gilroy-regular.ttf') format('truetype');
+    font-weight : 400;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'Gilroy';
+    src         : url('../fonts/gilroy-bold.woff') format('woff'), url('../fonts/gilroy-bold.ttf') format('truetype');
+    font-weight : 700;
+    font-style  : normal;
+}
+
+@font-face {
+    font-family : 'Gilroy';
+    src         : url('../fonts/gilroy-medium.woff') format('woff'), url('../fonts/gilroy-medium.ttf') format('truetype');
+    font-weight : 700;
+    font-style  : normal;
+}
+
+//fonts colors
+$main_color: #1C154E;
+$black: #000000;
+$green: #23C967;
+$light_main: #A7A2CB;
+$ph_color: #D0D3E2;
+$white: #ffffff;
+$secure: #AFB4CC;
+$decript: #494471;
+
+//colors
+$grey: #F4F5FA;
+$grey_border: #DDDFED;
+$input_underline: #E1E3EE;
+
+
+
+* {
+    box-sizing : border-box;
+}
+
+body {
+    margin      : 0;
+    padding     : 0;
+    font-family : 'gilroy', sans-serif;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;   
+}
+
+.wrapper{
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product_form{
+    width: 440px;
+    height: 535px;
+    background-color: $white;
+    box-shadow: 10px 10px 60px #E2E7FF;
+    border-radius: 0px 50px 50px 50px;
+    margin: 138px 141px;
+    padding: 35px;
+    &__header{
+        font-weight: 700;
+        font-size: 18px;
+        color: $main_color
+    }
+    &__description{
+        font-weight: 500;
+        font-size: 16px;
+        color: $decript;
+        display: block;
+    }
+    &__data{
+        display: block;
+        border: none;
+        border-bottom: 1.5px solid $input_underline;
+        width: 100%;
+    }
+    &__data::placeholder{
+        font-weight: 500;
+        font-size: 16px;
+        color: $ph_color;
+    }
+    &__button{
+        width: 100%;
+        height: 45px;
+        border-radius: 15px;
+        border: none;
+        font-weight: 700;
+        font-size: 18px;
+        color: $white;
+    }
+}
+
+.add_more{
+    color: $green;    
+}
+
+.green_button{
+    background-color: $green
+}
+
+.secure_txt{
+    font-size: 14px;
+    font-weight: 400;
+    color: $secure;
+}
+
+
+
+
+@import '_parts/_applicant';
+@import '_parts/_resume-header';
+@import '_parts/_company';
+@import '_parts/_utils';
+

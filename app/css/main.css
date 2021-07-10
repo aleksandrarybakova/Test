@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy-regular.woff") format("woff"), url("../fonts/gilroy-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy-bold.woff") format("woff"), url("../fonts/gilroy-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/gilroy-medium.woff") format("woff"), url("../fonts/gilroy-medium.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'gilroy', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  background-color: #E5E5E5;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.product_form {
+  width: 440px;
+  height: 535px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 10px 10px 60px #E2E7FF;
+          box-shadow: 10px 10px 60px #E2E7FF;
+  border-radius: 0px 50px 50px 50px;
+  margin: 138px 141px;
+  padding: 35px;
+}
+
+.product_form__header {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1C154E;
+}
+
+.product_form__description {
+  font-weight: 500;
+  font-size: 16px;
+  color: #494471;
+  display: block;
+}
+
+.product_form__data {
+  display: block;
+  border: none;
+  border-bottom: 1.5px solid #E1E3EE;
+  width: 100%;
+}
+
+.product_form__data::-webkit-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D0D3E2;
+}
+
+.product_form__data::-moz-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D0D3E2;
+}
+
+.product_form__data:-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D0D3E2;
+}
+
+.product_form__data::-ms-input-placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D0D3E2;
+}
+
+.product_form__data::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  color: #D0D3E2;
+}
+
+.product_form__button {
+  width: 100%;
+  height: 45px;
+  border-radius: 15px;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.add_more {
+  color: #23C967;
+}
+
+.green_button {
+  background-color: #23C967;
+}
+
+.secure_txt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #AFB4CC;
+}
+
+.transition-down {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  -o-transition: transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
+}
+
+.transition-up {
+  -webkit-transform: translateY(-120%);
+      -ms-transform: translateY(-120%);
+          transform: translateY(-120%);
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  -o-transition: transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
+}
+
+.transition {
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.h100 {
+  height: 100%;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+.h0 {
+  height: 0;
+  -webkit-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.border-dashed {
+  border-bottom: 2px dashed;
+  border-color: rgba(211, 35, 42, 0.2);
+}
+
+/*# sourceMappingURL=maps/main.css.map */
