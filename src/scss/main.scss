@@ -63,29 +63,52 @@ body {
     background-color: $white;
     box-shadow: 10px 10px 60px #E2E7FF;
     border-radius: 0px 50px 50px 50px;
-    margin: 138px 141px;
+    margin: 5% 7%;
     padding: 35px;
+    position: relative;
     &__header{
         font-weight: 700;
         font-size: 18px;
-        color: $main_color
+        color: $main_color;
+        margin: 0 0 12px;
     }
     &__description{
         font-weight: 500;
         font-size: 16px;
         color: $decript;
         display: block;
+        margin: 0 0 12px;
     }
     &__data{
         display: block;
         border: none;
         border-bottom: 1.5px solid $input_underline;
         width: 100%;
+        padding: 0 0 7px;
+        margin-bottom: 15px;
+        outline: none;
     }
     &__data::placeholder{
         font-weight: 500;
         font-size: 16px;
         color: $ph_color;
+    }
+    &__content--wrapper{
+        overflow-y: hidden;
+        height: 358.34px;
+        margin-bottom: 24px;
+        // width: 370px;
+    }
+    &__content--wrapper::-webkit-scrollbar{
+        width: 4px;
+        height: 358.34px;
+        background: #E1E3EE;
+        border-radius: 5px;
+    }
+    &__content--wrapper::-webkit-scrollbar-thumb{
+        height: 36.14px;
+        background: #23C967;
+        border-radius: 5px;
     }
     &__button{
         width: 100%;
@@ -95,28 +118,163 @@ body {
         font-weight: 700;
         font-size: 18px;
         color: $white;
+        margin-bottom: 19px;
+    }
+    &__group{
+        margin-right: 16px;
     }
 }
 
-.add_more{
-    color: $green;    
+.main_form{
+    margin-right: 16px;
 }
+.product_name{
+    margin-top: 10px;
+}
+
+.add_more{
+    color: $green;
+    margin-top: 10px;
+    margin-right: 5px; 
+    cursor: pointer;   
+}
+
+// .bnt-group{
+//     width: 370px;
+// }
 
 .green_button{
     background-color: $green
 }
 
-.secure_txt{
-    font-size: 14px;
-    font-weight: 400;
-    color: $secure;
+.secure{
+    justify-content: center;
+    &_txt{
+        font-size: 14px;
+        font-weight: 400;
+        color: $secure;
+        margin: 0 0 0 3px;
+    }
 }
 
 
 
+//
 
-@import '_parts/_applicant';
-@import '_parts/_resume-header';
-@import '_parts/_company';
+.choise_products{
+    border: 1.5px solid $input_underline;
+    border-radius: 15px;
+    margin-bottom: 23px;
+    &__item{
+        border-bottom: 1.5px solid $input_underline;
+        display: flex;
+        align-items: center;
+        padding: 11px 17px;
+        height: 60px;        
+        &--check{
+            margin: 0;
+        }
+    }
+    &__item:first-child{
+        background-color: $grey;
+        border-radius: 15px 15px 0 0 ;
+    }
+    &__item:first-child .prod_quant__discount{
+        color: $green;
+    }
+    
+    &__item:last-child{
+        border-bottom: none;
+        border-radius: 0 0 15px 15px ;
+    }
+    &__item:hover{
+        background-color: $grey;
+    }
+    &__item--check{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    &__item--check+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+      }
+
+      &__item--check+label::before {
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 22px;        
+        border: 1.5px solid #E1E3EE;
+        border-radius: 50%;
+        flex-shrink: 0;
+        flex-grow: 0;
+        // margin-right: 0.5em;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100%;
+      }
+      &__item--check:checked+label::before {
+        width: 22px;
+        height: 22px;
+        border: 1.5px solid #E1E3EE; 
+        border-radius: 50%; 
+        background-image: url(./../img/checked.svg) ;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 12px;
+      }
+}
+
+
+.prod_quant{
+    font-weight: 600;
+    font-size: 16px;
+    color: $black;
+    &__descript{
+        margin: 0 0 5px 0;
+    }
+    &__discount{
+        font-weight: normal;
+        font-size: 13px;
+        color: $light_main;
+        display: block;
+    }
+    &__txt_wrap{
+        margin-left: 17px;
+    }
+
+}
+
+.scroll{
+    width: 4px;
+    height: 358.34px;
+    background: #E1E3EE;
+    border-radius: 5px;
+    position: relative;
+    left: 32px;
+    &__thumb{
+        width: 4px;
+        height: 36.14px;
+        background: #23C967;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.dots{
+    background-image: url(./../img/dots.svg);
+    width: 103px;
+    height: 118px;
+    position: absolute;
+    top: 36px;
+    right: 76px;
+}
+
+
+
 @import '_parts/_utils';
 

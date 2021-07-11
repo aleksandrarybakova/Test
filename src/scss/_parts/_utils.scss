@@ -1,48 +1,13 @@
-.transition-down{
-    transform: translateY(0);
-    transition: transform 1s ease;
-}
-
-.transition-up{
-    transform: translateY(-120%);
-    transition: transform 1s linear;
-}
-
-.transition{
-    transition: all 1s ease;
-}
-
 .d-none{
-    display: none;
+    display: none!important;
 }
 
 .d-flex{
     display: flex;
 }
 
-.h100{
-    height: 100%;
-    transition: height 1s ease;
+.d-block{
+    display: block;
 }
 
-.h0{
-    height: 0;
-    transition: height 1s ease;
-}
-
-.rotate{
-    transform: rotate(180deg);
-}
-
-
-
-.link{
-    text-decoration: none;
-    color: inherit;
-}
-
-.border-dashed{
-    border-bottom: 2px dashed;
-    border-color: rgba(211, 35, 42, 0.2);
-}
 
